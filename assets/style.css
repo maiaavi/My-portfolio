@@ -7,6 +7,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/*TODO GENERAL*/
+a{
+    text-decoration: none;
+}
+
+
+
 /*?HEADER*/
 .header {
     display: flex;
@@ -34,21 +41,16 @@ html {
 }
 
 /*?TOP MENU*/
-.top-bar,
-.top-bar-nav ul,
-li,
-a {
+.top-bar, .top-bar-nav ul, li, a {
     display: flex;
     height: 55px;
     align-items: center;
-    list-style: none;
 }
 
 .top-bar-nav ul li a {
     font-family: "Amatic SC", cursive;
     font-size: 25px;
     font-weight: 900;
-    text-decoration: none;
     text-transform: uppercase;
     color: rgb(75, 0, 0);
     padding: 0 15px;
@@ -77,9 +79,35 @@ a {
     height: 100vh;
     width: 100vw;
 }
-/*?SECTION ONE*/
+
+/**SECTION ONE*/
 .one {
+    display: flex;
     background-image: url("./img/one-img.svg");
     background-size: cover;
     background-position: center center;
+}
+
+.content-one{
+    height: 100vh;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.left-text{
+    max-width: 400px;
+    margin: 5%;
+    width: 45vw;
+
+}
+
+.img-section-one{
+    width: 55vw;
+    margin: 5%;
+}
+
+#img-section-one{
+    width: 100%;
 }
