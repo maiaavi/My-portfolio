@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     /*Scrollbar for firefox and others*/
-    scrollbar-color: rgb(182, 206, 255, 0.85) #f4f4f4;
+    scrollbar-color: rgba(6, 0, 90, 0.85) #f4f4f4;
     scrollbar-width: thin;
 } 
 
@@ -12,14 +12,15 @@ html {
 }
     /*Scrollbar for chrome and others*/
 *::-webkit-scrollbar-track {
-    background-color: #f4f4f4;
+    background-color: rgba(255, 255, 255, 0.356);
 }
 *::-webkit-scrollbar {
     width: 6px;
     background: #f4f4f4;
 }
 *::-webkit-scrollbar-thumb {
-    background: rgb(182, 206, 255, 0.85);
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
 }
 
 /*TODO GENERAL*/
@@ -27,12 +28,8 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 80px;
-    font-weight: 900;
-    color: white;
-    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.479);
+p, h1, h2, h3, h4, h5, h6{
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 /*?HEADER*/
@@ -123,6 +120,14 @@ a {
     align-items: center;
 }
 
+.white-tittle{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.479);
+}
+
 .left-text {
     width: 50%;
     margin: 5%;
@@ -138,4 +143,31 @@ a {
 
 #img-section-one {
     width: 100%;
+}
+
+/**SECTION TWO*/
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-two{
+    margin: 0 auto;
+    margin: 0 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.black-tittle, .content-two p{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 90) ;
+    margin: 0 50px;
+
+}
+
+#profile{
+    padding: 20px;
+    margin: 0 auto;
+    width: 30%;
 }
