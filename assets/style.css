@@ -1,10 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-}
+    /*Scrollbar for firefox and others*/
+    scrollbar-color: rgb(182, 206, 255, 0.85) #f4f4f4;
+    scrollbar-width: thin;
+} 
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+    /*Scrollbar for chrome and others*/
+*::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+*::-webkit-scrollbar {
+    width: 6px;
+    background: #f4f4f4;
+}
+*::-webkit-scrollbar-thumb {
+    background: rgb(182, 206, 255, 0.85);
 }
 
 /*TODO GENERAL*/
@@ -20,14 +35,13 @@ h1 {
     text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.479);
 }
 
-
 /*?HEADER*/
 .header {
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 55px;
-    background-color: rgba(255, 255, 255, 0.808);
+    background-color: rgba(182, 206, 255, 0.85);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     position: fixed;
 }
@@ -58,10 +72,8 @@ a {
 }
 
 .top-bar-nav ul li a {
-    font-family: "Amatic SC", cursive;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 25px;
-    font-weight: 900;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     color: rgb(0, 0, 0);
     padding: 0 15px;
@@ -91,7 +103,7 @@ a {
 }
 
 /**SECTION ONE*/
-#one{
+#one {
     background-color: black;
     height: 100vh;
     width: 100vw;
@@ -105,19 +117,15 @@ a {
     justify-content: center;
 }
 
-
 .content-one {
     max-width: 1200px;
     display: flex;
     align-items: center;
-    height: 100vh;
 }
 
 .left-text {
     width: 50%;
     margin: 5%;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
-    font-weight: 400;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 25px;
     color: rgb(255, 255, 255);
