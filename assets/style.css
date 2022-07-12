@@ -6,6 +6,10 @@
     scrollbar-width: thin;
 }
 
+*::selection{
+    background-color: #C2BBFF;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -220,7 +224,18 @@ a {
     align-items: center;
     width: 50%;
     height: 100%;
+    color: #00005A;
 }
+
+.card p{
+    font-family: 50px;
+}
+
+.card h1, .card h4{
+    padding-top: 30px;
+
+}
+
 
 /**SECTION FOUR*/
 .four {
