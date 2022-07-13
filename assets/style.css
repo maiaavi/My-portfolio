@@ -344,3 +344,37 @@ legend{
 }
 
 /**FOOTER*/
+.footer-content{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-networks{
+    display: flex;
+}
+
+.sn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #053a6978;
+    border-radius: 50%;margin: 10px;
+}
+
+.sn:hover{
+background-color: #053B69;
+}
+
+#linkedin{
+    height: 20px;
+    padding: 12px;
+}
+
+#linkedin:hover{
+    filter: invert(100%)
+
+}
