@@ -6,8 +6,8 @@
     scrollbar-width: thin;
 }
 
-*::selection{
-    background-color: #C2BBFF;
+*::selection {
+    background-color: #c2bbff;
 }
 
 html {
@@ -63,9 +63,8 @@ h6 {
 }
 
 /*?LOGO*/
-#logo {
+.logo {
     display: flex;
-    height: 100%;
     align-items: center;
 }
 
@@ -95,7 +94,7 @@ a {
     left: 50%;
     width: 0;
     height: 3px;
-    background: #053B69;
+    background: #053b69;
     transition: all 0.5s ease-in-out;
 }
 
@@ -173,12 +172,13 @@ a {
 .content-two p {
     display: flex;
     justify-content: center;
-    color: rgb(0, 0, 90);
+    color: #053B69;
     margin: 0 50px;
 }
 
 .black-tittle {
     font-size: 50px;
+    font-weight: 500;
 }
 .content-two p {
     font-size: 22px;
@@ -224,18 +224,17 @@ a {
     align-items: center;
     width: 50%;
     height: 100%;
-    color: #00005A;
+    color: #00005a;
 }
 
-.card p{
+.card p {
     font-family: 50px;
 }
 
-.card h1, .card h4{
+.card h1,
+.card h4 {
     padding-top: 30px;
-
 }
-
 
 /**SECTION FOUR*/
 .four {
@@ -282,19 +281,17 @@ a {
     min-width: 320px;
     color: white;
     font-family: "Barlow Semi Condensed", sans-serif;
-
 }
 
-.contact-form fieldset{
-    border:none;
-    
+.contact-form fieldset {
+    border: none;
 }
-legend{
+legend {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 80px;
     font-weight: 900;
     color: white;
-    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.479);;
+    text-shadow: 5px 5px 2px rgba(255, 255, 255, 0.479);
     padding: 20px;
     margin: 0 auto;
 }
@@ -306,17 +303,17 @@ legend{
     padding: 10px;
 }
 
-.form-group input, .form-group textarea{
+.form-group input,
+.form-group textarea {
     border: none;
     background-color: white;
-    padding: 15px 20px ;
+    padding: 15px 20px;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 20px;
     outline: none;
-
 }
 
-.form-group button{
+.form-group button {
     margin: 0 auto;
     width: 200px;
     border: 2px solid white;
@@ -328,53 +325,84 @@ legend{
     cursor: pointer;
 }
 
-.form-group button:hover{
+.form-group button:hover {
     border: 2px solid white;
     background: white;
-    color: #053B69;
-    transition: all 0.5s ease-in-out ;
+    color: #053b69;
+    transition: all 0.5s ease-in-out;
 }
 
-.form-group input:focus, .form-group textarea:focus{
+.form-group input:focus,
+.form-group textarea:focus {
     box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
-.form-group ::placeholder{
+.form-group ::placeholder {
     color: rgba(5, 60, 107, 0.5);
 }
 
 /**FOOTER*/
-.footer-content{
-    height: 70vh;
+.footer-content {
+    height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.social-networks{
+.fc{
+    margin: 20px;
+}
+
+.lottie-footer{
+    height: 30%;
+}
+
+.citation{
+    font-size: 25px;
+    color: #053B69;
+    font-weight: 500;
+}
+
+.social-networks {
     display: flex;
 }
 
-.sn{
+.sn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
     width: 40px;
     border: 1px solid #053a6978;
-    border-radius: 50%;margin: 10px;
+    border-radius: 20%;
+    margin: 10px;
+    background-color: #053b69;
+    transition: all 0.5s ease-in-out;
+
 }
 
-.sn:hover{
-background-color: #053B69;
+.sn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.425);
 }
 
-#linkedin{
+#linkedin {
     height: 20px;
     padding: 12px;
+    fill:#053b69 ;
+    filter: invert(100%);
 }
 
-#linkedin:hover{
-    filter: invert(100%)
-
+#git {
+    border-radius: 50%;
+    height: 30px;
+    filter: invert(100%);
+    padding: 4px;
 }
+
+#cv{
+    filter: invert(100%);
+    height: 25px;
+}
+
+
