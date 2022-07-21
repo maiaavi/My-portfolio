@@ -23,6 +23,8 @@
 <body>
     <!--TODO HEADER-->
     <header>
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
         <div class="header">
             <div class="content-header">
                 <div class="logo">
@@ -30,7 +32,7 @@
                 </div>
                 <div class="top-bar">
                     <nav class="top-bar-nav">
-                        <ul>
+                        <ul onclick="getElementById('close-menu').checked = false">
                             <li><a href="#one">I n t r o</a></li>
                             <li><a href="#two">m e</a></li>
                             <li><a href="#three">S k i l l s</a></li>
@@ -127,8 +129,7 @@
                         </div>
                         <div class="three-skills">
                             <p class="title-skills">Design Tools:</p>
-                            <p class="text-skills">Balsamiq Mockups <br> Figma <br> Invision <br> Marvel <br> Pen &
-                                Paper <br> Sketch <br> Webflow <br> Zeplin</p>
+                            <p class="text-skills">Canva <br> Figma <br> Marvel <br> 
                         </div>
                     </div>
                 </div>
@@ -138,29 +139,17 @@
         <section id="four">
             <div class="four main-content">
                 <div>
-                    <p class="black-title">My Portifolio</p>
+                    <p class="black-title">My Projects</p>
                 </div>
                 <div class="content-four">
                     <div class="works">
-                        <img src="http://source.unsplash.com/random/360x360?r=1" alt="" class="zoom">
-                        <div class="">
-
-                        </div>
+                        <img src="./assets/img/pexels-hobi-industri-4053267 (2).jpg" alt="" class="zoom" style="width: 360px;">
                     </div>
                     <div class="works">
-                        <img src="http://source.unsplash.com/random/360x360?r=2" alt="" class="zoom">
+                        <img src="./assets/img/pexels-cottonbro-7012263.jpg" alt="" class="zoom" style="width: 360px;">
                     </div>
                     <div class="works">
-                        <img src="http://source.unsplash.com/random/360x360?r=3" alt="" class="zoom">
-                    </div>
-                    <div class="works">
-                        <img src="http://source.unsplash.com/random/360x360?r=4" alt="" class="zoom">
-                    </div>
-                    <div class="works">
-                        <img src="http://source.unsplash.com/random/360x360?r=5" alt="" class="zoom">
-                    </div>
-                    <div class="works">
-                        <img src="http://source.unsplash.com/random/360x360?r=7" alt="" class="zoom">
+                        <img src="./assets/img/pexels-mikhail-nilov-6963055.jpg" alt="" class="zoom" style="width: 360px;">
                     </div>
                 </div>
             </div>
@@ -186,7 +175,7 @@
                                     placeholder="Your message"></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="submit">Send message</button>
+                                <button class="butt" type="submit">Send message</button>
                             </div>
                         </fieldset>
                     </div>
@@ -213,7 +202,7 @@
             <div class="fc social-networks">
                 <a href="https://www.linkedin.com/in/vict%C3%B3ria-dos-santos-maia-18319b226/" target="blank">
                     <div class="sn">
-                        <img src="./assets/img/linkedin.svg" alt="" id="linkedin">
+                        <img src="./assets/img/linkedin-in-brands.svg" alt="" id="linkedin">
                     </div>
                 </a>
                 <a href="https://github.com/maiaavi">

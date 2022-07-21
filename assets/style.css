@@ -75,7 +75,6 @@ h6 {
 li,
 a {
     display: flex;
-    height: 55px;
     align-items: center;
 }
 
@@ -85,23 +84,11 @@ a {
     text-transform: uppercase;
     color: rgb(0, 0, 0);
     padding: 0 15px;
-    position: relative;
 }
 
-.top-bar-nav ul li a::after {
-    content: "";
-    position: absolute;
-    bottom: 7px;
-    left: 50%;
-    width: 0;
-    height: 3px;
-    background: #053b69;
-    transition: all 0.5s ease-in-out;
-}
-
-.top-bar-nav ul li a:hover::after {
-    left: 12.5%;
-    width: 75%;
+/*mobile menu*/
+.close-menu {
+    display: none;
 }
 
 /**MAIN*/
@@ -164,7 +151,7 @@ a {
     align-items: center;
 }
 .content-two {
-    margin: 0 50px;
+    margin: 10px 30px;
     width: 100%;
     max-width: 1200px;
 }
@@ -173,7 +160,7 @@ a {
 .content-two p {
     display: flex;
     justify-content: center;
-    color: #053B69;
+    color: #053b69;
     margin: 25px 50px;
 }
 
@@ -228,14 +215,13 @@ a {
     color: #00005a;
 }
 
-.one-skills, .two-skills, .three-skills{
+.one-skills,
+.two-skills,
+.three-skills {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 23%;
-
 }
-
 
 .blue-title {
     font-size: 30px;
@@ -243,12 +229,12 @@ a {
     padding: 30px 0px 0px 0px;
 }
 
-.text-skills{
+.text-skills {
     padding: 15px;
     font-size: 20px;
 }
 
-.title-skills{
+.title-skills {
     font-size: 22px;
     font-weight: 500;
     padding: 15px;
@@ -257,10 +243,11 @@ a {
 /**SECTION FOUR*/
 .four {
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
-.four .black-title{
+.four .black-title {
     padding-top: 75px;
 }
 
@@ -278,13 +265,16 @@ a {
     max-width: 360px;
     max-height: 360px;
     overflow: hidden;
+    border-radius: 20px;
 }
 
-.zoom{
+/*gradient change color*/
+
+.zoom {
     transition: 0.4s;
 }
 
-.zoom:hover{
+.zoom:hover {
     transform: scale(1.1);
 }
 
@@ -379,17 +369,17 @@ legend {
     flex-direction: column;
 }
 
-.fc{
+.fc {
     margin: 20px;
 }
 
-.lottie-footer{
+.lottie-footer {
     height: 30%;
 }
 
-.citation{
+.citation {
     font-size: 25px;
-    color: #053B69;
+    color: #053b69;
     font-weight: 500;
 }
 
@@ -408,7 +398,6 @@ legend {
     margin: 10px;
     background-color: #053b69;
     transition: all 0.5s ease-in-out;
-
 }
 
 .sn:hover {
@@ -418,8 +407,6 @@ legend {
 
 #linkedin {
     height: 20px;
-    padding: 12px;
-    fill:#053b69 ;
     filter: invert(100%);
 }
 
@@ -427,55 +414,97 @@ legend {
     border-radius: 50%;
     height: 30px;
     filter: invert(100%);
-    padding: 4px;
 }
 
-#cv{
+#cv {
     filter: invert(100%);
     height: 25px;
 }
 
-
 /*voltar ao topo*/
-#lottie-top{
+#lottie-top {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    bottom:30px;
+    bottom: 30px;
     left: 30px;
-    width:40px;
+    width: 40px;
     z-index: 3;
-    color: #053B69;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #053b69;
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-#top-p{
+#top-p {
     width: 65px;
     font-weight: 500;
 }
 
 /*TODO media queries main*/
-@media(max-width: 900px) {
+
+@media (max-width: 900px) {
+    /*menu*/
+    .header {
+        height: 100vh;
+        display: none;
+    }
+    .close-menu-label::after {
+        content: "≡";
+        position: fixed;
+        z-index: 4;
+        top: 10px;
+        right: 10px;
+        font-size: 40px;
+        cursor: pointer;
+        background-color: #053b69;
+        color: white;
+        width: 45px;
+        height: 45px;
+        border-radius: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .close-menu:checked ~ .header {
+        display: flex;
+    }
+
+    .close-menu:checked ~ .close-menu-label::after {
+        content: "×";
+    }
+
+    .content-header,
+    .top-bar,
+    .top-bar-nav,
+    ul,
+    li,
+    a {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
     /*intro*/
-    .content-one{
+    .content-one {
         flex-direction: column;
         justify-content: center;
     }
-    .left-text{
+    .left-text {
         width: 80%;
     }
     /*skills*/
-    .content-three{
+    .content-three {
         flex-direction: column;
         align-items: center;
-        height: 1600px;
+        height: 1300px;
         margin-top: 90px;
     }
-    .card{
-        width: 80%;
+    .card {
+        width: 95%;
     }
-    
+
     #line-center {
         margin: 0 auto;
         width: 100%;
@@ -483,26 +512,35 @@ legend {
         background-color: rgba(0, 0, 0, 0.1);
     }
     /*projects*/
-    .content-four{
-        grid-template-columns: repeat(2, 1fr);
-
+    .content-four {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media(max-width: 700px){
-    .content-four{
-        grid-template-columns: repeat(1, 1fr);
+@media (max-width: 700px) {
+    /*projects*/
 
+    .form-group button {
+        width: 150px;
+        font-size: 18px;
     }
     legend {
         font-family: "Barlow Semi Condensed", sans-serif;
         font-size: 60px;
     }
-    .white-title{
+    .white-title {
         font-size: 70px;
     }
-    .left-text{
+    .black-title {
+        font-size: 40px;
+    }
+
+    .left-text {
         font-size: 22px;
     }
-}
 
+    .content-two {
+        margin: 10px;
+        font-size: 20px;
+    }
+}
