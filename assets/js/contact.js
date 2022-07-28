@@ -26,15 +26,15 @@ function sendMessage() {
     }
 
     $.ajax({
-        url: 'http://localhost/My%20Landing%20Page/contact/send_email.php',
-        method: 'POST',
-        data: {
+        url:"http://localhost/My%20Landing%20Page/contact/send_email.php",
+        method:"POST",
+        data:{
             name: name,
             email: email,
             message: message
         },
-        dataType: 'json'
+        dataType:'json'
     }).done(function(retorno){
-        console.log(retorno);
+        console.log(retorno)
     })
 }
